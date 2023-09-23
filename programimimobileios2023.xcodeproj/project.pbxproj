@@ -11,6 +11,7 @@
 		43FFCF6C2ABB7247006747C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FFCF6B2ABB7247006747C1 /* ContentView.swift */; };
 		43FFCF6E2ABB7249006747C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43FFCF6D2ABB7249006747C1 /* Assets.xcassets */; };
 		43FFCF712ABB7249006747C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43FFCF702ABB7249006747C1 /* Preview Assets.xcassets */; };
+		43FFCF782ABF79C1006747C1 /* PlayerInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FFCF772ABF79C1006747C1 /* PlayerInputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		43FFCF6B2ABB7247006747C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		43FFCF6D2ABB7249006747C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43FFCF702ABB7249006747C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		43FFCF772ABF79C1006747C1 /* PlayerInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		43FFCF682ABB7247006747C1 /* programimimobileios2023 */ = {
 			isa = PBXGroup;
 			children = (
+				43FFCF772ABF79C1006747C1 /* PlayerInputView.swift */,
 				43FFCF692ABB7247006747C1 /* programimimobileios2023App.swift */,
 				43FFCF6B2ABB7247006747C1 /* ContentView.swift */,
 				43FFCF6D2ABB7249006747C1 /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			files = (
 				43FFCF6C2ABB7247006747C1 /* ContentView.swift in Sources */,
 				43FFCF6A2ABB7247006747C1 /* programimimobileios2023App.swift in Sources */,
+				43FFCF782ABF79C1006747C1 /* PlayerInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

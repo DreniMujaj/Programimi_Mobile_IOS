@@ -11,7 +11,7 @@ import SwiftUI
 struct programimimobileios2023App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PlayerInputView()
         }
     }
 }
