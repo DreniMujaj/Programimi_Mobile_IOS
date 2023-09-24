@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct programimimobileios2023App: App {
+    @StateObject private var playerData = PlayerData()
     var body: some Scene {
         WindowGroup {
-            PlayerInputView()
+            PlayerInputView().environmentObject(playerData) 
         }
     }
 }

@@ -12,6 +12,8 @@ struct ContentView: View {
     @State var cpuCard = "card13"
     @State var playerScore = 0
     @State var cpuScore = 0
+    @EnvironmentObject var playerData: PlayerData // Inject the PlayerData object
+
     var body: some View {
         ZStack {
             Spacer()
@@ -40,7 +42,7 @@ struct ContentView: View {
                 HStack {
                     Spacer()
                     VStack{
-                        Text("Player").font(.headline).padding(.bottom, 10)
+                        Text(getPlayerName()).font(.headline).padding(.bottom, 10)
                         
                         Text(String(playerScore)).font(.largeTitle)
                     }
@@ -57,8 +59,8 @@ struct ContentView: View {
     }
     
     func deal() {
-        var playerCardNumber = Int.random(in: 2...14)
-        var cpuCardNumber = Int.random(in: 2...14)
+        let playerCardNumber = Int.random(in: 2...14)
+        let cpuCardNumber = Int.random(in: 2...14)
 
         // Randomize the players card
         playerCard = "card" + String(playerCardNumber)
@@ -77,6 +79,15 @@ struct ContentView: View {
             cpuScore += 1;
         }
     }
+    
+    func getPlayerName()-> String {
+           // Access the playerResponse from PlayerData
+           if let playerResponse = playerData.playerResponse {
+               return playerResponse.name;
+           } else {
+               return "No player available!"
+           }
+       }
 }
 
 struct ContentView_Previews: PreviewProvider {
